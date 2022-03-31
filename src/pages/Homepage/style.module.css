@@ -1,0 +1,20 @@
+.spaContainer {
+    background: rgb(200, 198, 198);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgb(166, 161, 161);
+    height: 80vh;
+    width: 90vw;
+    border-radius: 4em;
+    padding: 2em;
+    
+}
+
+.formGroup {
+    /* background:rgb(75, 60, 60); */
+}
