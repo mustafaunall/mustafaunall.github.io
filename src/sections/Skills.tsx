@@ -5,7 +5,7 @@ const GROUPS = [
   },
   {
     label: 'frontend',
-    skills: ['React 18', 'Vue 3', 'TypeScript', 'Redux Toolkit', 'Tailwind CSS', 'Vuetify'],
+    skills: ['React 18', 'Vue 3', 'Flutter', 'TypeScript', 'Redux Toolkit', 'Tailwind CSS', 'Vuetify'],
   },
   {
     label: 'data & messaging',
@@ -17,7 +17,7 @@ const GROUPS = [
   },
   {
     label: 'devops & infra',
-    skills: ['Docker', 'Kubernetes / RKE2', 'Helm', 'Jenkins', 'Harbor', 'HAProxy', 'Azure DevOps', 'Azure Pipelines'],
+    skills: ['Docker', 'Kubernetes / RKE2', 'Helm', 'Jenkins', 'Harbor', 'HAProxy', 'Ansible', 'Azure DevOps', 'Azure Pipelines'],
   },
   {
     label: 'observability',
