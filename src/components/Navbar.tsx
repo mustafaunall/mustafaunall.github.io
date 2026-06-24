@@ -26,8 +26,11 @@ export default function Navbar() {
       }`}
     >
       <nav className="container mx-auto flex items-center justify-between h-16 px-6">
-        <a href="#" className="flex items-center" aria-label="Mustafa Ünal">
-          <img src="/logo.png" alt="MU logo" className="h-9 w-9 object-contain" />
+        <a href="#" className="flex items-center gap-2.5" aria-label="Mustafa Ünal">
+          <img src="/logo.png" alt="MU" className="h-10 w-10 object-contain" />
+          <span className="font-mono text-sm font-medium text-foreground tracking-tight hidden sm:inline">
+            mustafa ünal
+          </span>
         </a>
 
         <div className="hidden md:flex items-center gap-6">

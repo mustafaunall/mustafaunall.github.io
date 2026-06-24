@@ -80,7 +80,7 @@ export default function Hero() {
   }, [visibleLines])
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 pt-20 pb-12">
+    <section className="min-h-screen flex flex-col items-center justify-center px-6 pt-20 pb-20">
       <div className="w-full max-w-2xl animate-fade-up" style={{ animationDelay: '0.1s', opacity: 0 }}>
         <p className="font-mono text-xs text-muted-foreground mb-8 tracking-widest uppercase">
           hello, world
