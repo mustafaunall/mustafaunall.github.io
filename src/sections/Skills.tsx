@@ -1,19 +1,31 @@
 const GROUPS = [
   {
-    label: 'frontend',
-    skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Redux', 'SASS'],
-  },
-  {
     label: 'backend',
-    skills: ['.NET / C#', 'Go', 'Node.js', 'Python', 'GraphQL', 'REST'],
+    skills: ['.NET 6/8/10', 'ASP.NET Core', 'C#', 'Go (Fiber)', 'REST API', 'N-Layer Arch'],
   },
   {
-    label: 'data',
-    skills: ['MSSQL', 'MongoDB', 'Redis', 'MariaDB', 'Elasticsearch'],
+    label: 'frontend',
+    skills: ['React 18', 'Vue 3', 'TypeScript', 'Redux Toolkit', 'Tailwind CSS', 'Vuetify'],
   },
   {
-    label: 'infra & tools',
-    skills: ['Docker', 'Azure', 'Nginx', 'Git', 'Linux', 'Cloudflare'],
+    label: 'data & messaging',
+    skills: ['PostgreSQL', 'EF Core', 'Dapper', 'GORM', 'MSSQL', 'RabbitMQ', 'MassTransit', 'SignalR', 'Redis'],
+  },
+  {
+    label: 'auth & gateway',
+    skills: ['Keycloak', 'OIDC / OAuth2', 'YARP Reverse Proxy', 'JWT'],
+  },
+  {
+    label: 'devops & infra',
+    skills: ['Docker', 'Kubernetes / RKE2', 'Helm', 'Jenkins', 'Harbor', 'HAProxy', 'Azure DevOps', 'Azure Pipelines'],
+  },
+  {
+    label: 'observability',
+    skills: ['Prometheus', 'Grafana', 'VictoriaMetrics', 'Elasticsearch', 'Serilog'],
+  },
+  {
+    label: 'tools',
+    skills: ['Git', 'Quartz.NET', 'Hangfire', 'QuestPDF', 'FluentValidation', 'AutoMapper', 'MinIO / S3', 'Linux', 'Bash'],
   },
 ]
 
@@ -25,9 +37,7 @@ export default function Skills() {
           // stack
         </p>
 
-        <h2 className="text-2xl font-semibold text-foreground mb-12">
-          Tools I work with.
-        </h2>
+        <h2 className="text-2xl font-semibold text-foreground mb-12">Tools I work with.</h2>
 
         <div className="grid sm:grid-cols-2 gap-8">
           {GROUPS.map((group) => (

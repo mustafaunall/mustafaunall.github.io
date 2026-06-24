@@ -7,32 +7,35 @@ export default function About() {
         </p>
 
         <h2 className="text-2xl font-semibold text-foreground mb-8">
-          Building things that hold up.
+          Building systems that hold up under pressure.
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              I&apos;m a software engineer based in Turkey, working at RSU. Most of my days are
-              spent in .NET and React — designing APIs, building interfaces, figuring out where the
-              abstraction should sit.
+              Backend developer with ~4 years of professional experience, focused on the .NET
+              ecosystem and microservice architectures. At RSU, I build enterprise-scale platforms
+              in the cybersecurity domain — vulnerability management, penetration test reporting,
+              and DDoS simulation.
             </p>
             <p>
-              Currently going deep on Go. I find the language design unusually honest, and I&apos;m
-              interested in the problems that make it shine.
+              I design multi-layered microservice systems with ASP.NET Core, PostgreSQL, and
+              RabbitMQ; handle production deployments through Kubernetes/Helm and Jenkins CI/CD;
+              and architect auth infrastructure with Keycloak SSO and YARP API Gateway.
             </p>
             <p>
-              I care about open source and try to contribute where I can. If you&apos;re working on
-              something interesting in the .NET, React, or Go space, I&apos;m happy to talk.
+              I also work with Go for data-collection services, and have hands-on frontend
+              experience in React and Vue when the project calls for it.
             </p>
           </div>
 
           <div className="space-y-3">
             {[
-              { label: 'currently at', value: 'RSU' },
-              { label: 'main stack', value: '.NET · React · TypeScript' },
-              { label: 'learning', value: 'Go' },
-              { label: 'interested in', value: 'clean arch · OSS · DX' },
+              { label: 'currently at', value: 'RSU Bilişim A.Ş.' },
+              { label: 'role', value: 'Backend Developer (.NET)' },
+              { label: 'domain', value: 'cybersecurity · microservices' },
+              { label: 'also uses', value: 'Go · React · Vue' },
+              { label: 'education', value: 'Computer Engineering, IGU \'23' },
               { label: 'email', value: 'mustafaunaldev@gmail.com', href: 'mailto:mustafaunaldev@gmail.com' },
             ].map(({ label, value, href }) => (
               <div key={label} className="flex gap-4 text-sm border-b border-border pb-3">

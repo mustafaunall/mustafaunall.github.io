@@ -24,7 +24,7 @@ const CODE_LINES: CodeLine[] = [
     tokens: [
       { text: '  role', cls: 'text-red-300' },
       { text: ': ', cls: 'text-zinc-500' },
-      { text: '"Software Engineer"', cls: 'text-emerald-300' },
+      { text: '"Backend Developer"', cls: 'text-emerald-300' },
       { text: ',', cls: 'text-zinc-500' },
     ],
   },
@@ -34,7 +34,7 @@ const CODE_LINES: CodeLine[] = [
       { text: ': [', cls: 'text-zinc-500' },
       { text: '".NET"', cls: 'text-amber-300' },
       { text: ', ', cls: 'text-zinc-500' },
-      { text: '"React"', cls: 'text-amber-300' },
+      { text: '"Microservices"', cls: 'text-amber-300' },
       { text: ', ', cls: 'text-zinc-500' },
       { text: '"Go"', cls: 'text-amber-300' },
       { text: '],', cls: 'text-zinc-500' },
@@ -42,9 +42,17 @@ const CODE_LINES: CodeLine[] = [
   },
   {
     tokens: [
-      { text: '  location', cls: 'text-red-300' },
+      { text: '  domain', cls: 'text-red-300' },
       { text: ': ', cls: 'text-zinc-500' },
-      { text: '"Turkey"', cls: 'text-emerald-300' },
+      { text: '"cybersecurity platforms"', cls: 'text-emerald-300' },
+      { text: ',', cls: 'text-zinc-500' },
+    ],
+  },
+  {
+    tokens: [
+      { text: '  experience', cls: 'text-red-300' },
+      { text: ': ', cls: 'text-zinc-500' },
+      { text: '"~4 years"', cls: 'text-violet-300' },
       { text: ',', cls: 'text-zinc-500' },
     ],
   },
@@ -65,7 +73,7 @@ export default function Hero() {
 
   useEffect(() => {
     if (visibleLines >= CODE_LINES.length) return
-    const t = setTimeout(() => setVisibleLines((v) => v + 1), 320)
+    const t = setTimeout(() => setVisibleLines((v) => v + 1), 300)
     return () => clearTimeout(t)
   }, [visibleLines])
 
@@ -84,7 +92,7 @@ export default function Hero() {
             <span className="ml-3 font-mono text-xs text-muted-foreground">~/developer.ts</span>
           </div>
 
-          <div className="p-6 font-mono text-sm leading-7 min-h-[260px]">
+          <div className="p-6 font-mono text-sm leading-7 min-h-[280px]">
             {CODE_LINES.slice(0, visibleLines).map((line, i) => (
               <div key={i} className="animate-fade-in" style={{ animationFillMode: 'both' }}>
                 {line.tokens.map((token, j) => (
