@@ -13,28 +13,28 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              Backend developer with ~4 years of professional experience, focused on the .NET
-              ecosystem and microservice architectures. At RSU, I build enterprise-scale platforms
-              in the cybersecurity domain — vulnerability management, penetration test reporting,
-              and DDoS simulation.
+              Full Stack developer with ~4 years of professional experience across backend,
+              frontend, mobile, and infrastructure. At RSU, I build enterprise-scale cybersecurity
+              platforms — vulnerability management, penetration test reporting, and DDoS simulation.
             </p>
             <p>
-              I design multi-layered microservice systems with ASP.NET Core, PostgreSQL, and
-              RabbitMQ; handle production deployments through Kubernetes/Helm and Jenkins CI/CD;
-              and architect auth infrastructure with Keycloak SSO and YARP API Gateway.
+              On the freelance side, I shipped Impact of Art end-to-end: microservice backend
+              (.NET 8 + Go), Flutter mobile app live on App Store and Google Play, React admin
+              panel, and full infra with Ansible, HAProxy, and GitHub Actions CI/CD.
             </p>
             <p>
-              I also work with Go for data-collection services, and have hands-on frontend
-              experience in React and Vue when the project calls for it.
+              I design multi-service architectures with ASP.NET Core, Go, PostgreSQL, and
+              RabbitMQ; handle production deployments via Kubernetes/Helm and Jenkins; and
+              architect auth infrastructure with Keycloak SSO and YARP API Gateway.
             </p>
           </div>
 
           <div className="space-y-3">
             {[
               { label: 'currently at', value: 'RSU Bilişim A.Ş.' },
-              { label: 'role', value: 'Backend Developer (.NET)' },
-              { label: 'domain', value: 'cybersecurity · microservices' },
-              { label: 'also uses', value: 'Go · React · Vue' },
+              { label: 'role', value: 'Full Stack Developer' },
+              { label: 'domain', value: 'cybersecurity · mobile · microservices' },
+              { label: 'stack', value: 'Go · Flutter · React · Vue' },
               { label: 'education', value: 'Computer Engineering, IGU \'23' },
               { label: 'email', value: 'mustafaunaldev@gmail.com', href: 'mailto:mustafaunaldev@gmail.com' },
             ].map(({ label, value, href }) => (
