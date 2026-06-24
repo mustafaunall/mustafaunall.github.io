@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 4%;
+    --foreground: 210 25% 88%;
+    --surface: 240 8% 8%;
+    --primary: 262 70% 60%;
+    --primary-foreground: 0 0% 100%;
+    --muted: 240 5% 20%;
+    --muted-foreground: 240 5% 55%;
+    --accent: 262 70% 60%;
+    --accent-foreground: 0 0% 100%;
+    --border: 240 5% 13%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border box-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  ::selection {
+    background: hsl(262 70% 60% / 0.3);
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary) / 0.35);
+    border-radius: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
