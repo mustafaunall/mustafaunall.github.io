@@ -2,7 +2,29 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Github } from 'lucide-react'
 
-const PROJECTS = [
+type Project = {
+  title: string
+  description: string
+  tags: string[]
+  github: string | null
+  live: string | null
+  appStore?: string | null
+  playStore?: string | null
+  company: string
+}
+
+const PROJECTS: Project[] = [
+  {
+    title: 'Impact of Art — Art Platform & Mobile App',
+    description:
+      'End-to-end freelance platform for Cappadocia Biennial and art events. Microservice backend behind a .NET 8 / YARP API Gateway: Content Service (Go + Fiber), Media Service (Go + Fiber + MinIO/S3), Newsletter Service (.NET 8 + MassTransit), and a Notification Worker (Go + RabbitMQ consumer). Flutter mobile app published on App Store and Google Play — Clean Architecture, Riverpod 2.x state management, GoRouter, Dio, Freezed. Admin panel built with React 18 + Vite. Infrastructure: Docker Compose (layered infra + services), HAProxy for TLS termination with Cloudflare IP whitelisting, Ansible for automated server provisioning and deployment, GitHub Actions CI/CD.',
+    tags: ['.NET 8', 'YARP', 'Go', 'Fiber', 'Flutter', 'React 18', 'TypeScript', 'PostgreSQL', 'RabbitMQ', 'MassTransit', 'MinIO/S3', 'Redis', 'Docker', 'HAProxy', 'Ansible', 'Riverpod'],
+    github: null,
+    live: 'https://impactofart.tr',
+    appStore: 'https://apps.apple.com/us/app/sinemasal-impact-of-art/id6761755799',
+    playStore: 'https://play.google.com/store/apps/details?id=com.sinemasal.impactofartapp',
+    company: 'Freelance',
+  },
   {
     title: 'RVAM — Vulnerability & Asset Management',
     description:
@@ -37,6 +59,8 @@ const PROJECTS = [
     tags: ['.NET Core', 'MVC', 'REST API', 'RabbitMQ', 'Hangfire', 'PostgreSQL'],
     github: null,
     live: 'https://farmakariyer.net',
+    appStore: null,
+    playStore: null,
     company: 'Freelance',
   },
   {
@@ -82,7 +106,7 @@ export default function Projects() {
                   </h3>
                   <span className="font-mono text-xs text-primary/60">{project.company}</span>
                 </div>
-                <div className="flex items-center gap-2 shrink-0">
+                <div className="flex items-center gap-3 shrink-0">
                   {project.github && (
                     <a
                       href={project.github}
@@ -102,6 +126,26 @@ export default function Projects() {
                       className="font-mono text-xs text-primary hover:underline"
                     >
                       live ↗
+                    </a>
+                  )}
+                  {project.appStore && (
+                    <a
+                      href={project.appStore}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-mono text-xs text-primary hover:underline"
+                    >
+                      App Store ↗
+                    </a>
+                  )}
+                  {project.playStore && (
+                    <a
+                      href={project.playStore}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-mono text-xs text-primary hover:underline"
+                    >
+                      Play Store ↗
                     </a>
                   )}
                 </div>
